@@ -1,0 +1,10 @@
+{
+  "version": "2",
+  "status": "design-reviewed_pending-owner-baseline-approval",
+  "files": {
+    ".agents/skills/monster-rpg-baseline/SKILL.md": "e1d805461f7fcb67a2dfb127b3f20a34913435a47f0faf044375cb30d2694a44",
+    ".agents/skills/monster-rpg-review/SKILL.md": "8f2837ea38a222183338534fe36486586e1fa925a07f7e20f3d28e9ea31f8b30",
+    ".agents/skills/monster-rpg-transactions/SKILL.md": "4c47ccf55a158b637b02f1f85771fbee8ba72e71f50149bf2baaeb3b48c51abc",
+    "docs/gameplay-baseline.md": "90c2d1b324b8ef43e12db62a4173f36e3171d598191cc5384b412d20ed29284b"
+  }
+}
