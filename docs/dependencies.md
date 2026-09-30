@@ -1,8 +1,8 @@
 # Dependency inventory
 
-No runtime dependencies. Exact direct development dependencies: TypeScript 7.0.2 (Apache-2.0), Vite 8.3.1 (MIT), @types/node 24.10.1 (MIT). Node 24.19.0 and npm 11.9.0 are the approved runtime/tooling. Vite requires Node ^20.19.0 or >=22.12.0; TypeScript requires >=16.20.0. The pinned runtime satisfies both.
+No runtime dependencies. Exact direct development dependencies: TypeScript 7.0.2 (Apache-2.0), Vite 8.3.1 (MIT), @types/node 24.10.1 (MIT), Prettier 3.9.9 (MIT). Node 24.19.0 and npm 11.9.0 are the approved runtime/tooling. Vite requires Node ^20.19.0 or >=22.12.0; TypeScript requires >=16.20.0. The pinned runtime satisfies both.
 
-The project has no selected distribution license or LICENSE file; package.json remains private. Dependency licenses do not license project code. Below is metadata from the final lockfile, including platform-specific optional development packages; it is an inventory, not a legal assessment. No dependency versions were changed in F9.
+The project has no selected distribution license or LICENSE file; package.json remains private. Dependency licenses do not license project code. Below is metadata from the final lockfile, including platform-specific optional development packages; it is an inventory, not a legal assessment. No dependency versions were changed in F9. P2 adds only Prettier 3.9.9 for formatting and parsed declaration-specifier correction.
 
 | Lockfile package | Version | Recorded license | Installed here |
 |---|---|---|---|
@@ -63,6 +63,7 @@ The project has no selected distribution license or LICENSE file; package.json r
 | picocolors | 1.1.1 | ISC | yes |
 | picomatch | 4.0.7 | MIT | yes |
 | postcss | 8.5.28 | MIT | yes |
+| prettier | 3.9.9 | MIT | yes |
 | rolldown | 1.2.11 | MIT | yes |
 | source-map-js | 1.2.1 | BSD-3-Clause | yes |
 | tinyglobby | 0.2.17 | MIT | yes |

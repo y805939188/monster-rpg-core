@@ -1,6 +1,6 @@
 # F9 validation and final review handoff
 
-Status **REVIEWING**. Implementer self-review **PASS**; independent final review required before MVP DONE. No new domain implementation. All 17 production source files and package-lock.json remain byte-identical to accepted F8. The F8 manifest was verified before work. Applied project baseline Skill to B01–B15 coverage, transactions Skill to integrated failure/replay boundaries, review Skill to final source/tests/evidence and narrow scope. Library Skill used for requested deliverables.
+Historical F9 handoff evidence; F0–F9 are now accepted in initial release 8ce567e09edf82d8df9a802d8b3b6b8532758d62. The following file-identity and execution claims describe the F9 snapshot, not later P1/P2 changes. No new domain implementation. All 17 production source files and package-lock.json remain byte-identical to accepted F8. The F8 manifest was verified before work. Applied project baseline Skill to B01–B15 coverage, transactions Skill to integrated failure/replay boundaries, review Skill to final source/tests/evidence and narrow scope. Library Skill used for requested deliverables.
 
 Actual environment: Node v24.19.0, npm 11.9.0, TypeScript 7.0.2, Vite 8.3.1, @types/node 24.10.1. Exact versions retained. Commands executed separately, in order, on 2026-09-30:
 

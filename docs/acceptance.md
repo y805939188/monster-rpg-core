@@ -1,6 +1,6 @@
 # v2 executed acceptance matrix
 
-F9 self-review PASS; independent final review pending. `npm test`: 114/114, no skipped tests. The four `v2 complete public loop: <rules> / <adapter>` tests in `tests/acceptance.test.mjs` run the same actual public flow from `examples/acceptance.mjs` with `long-finite-fixed`/`short-none-full` × `script`/`frames`. Scripted deltas and independently authored final checkpoints implement the same trusted local contract; neither replaces core transitions.
+F0–F9 accepted in the initial release. Historical F9 `npm test`: 114/114, no skipped tests; P1/P2 add four regressions/tooling checks for 118 total. P1/P2 independent reviews passed; execution evidence remains implementer-owned. The four `v2 complete public loop: <rules> / <adapter>` tests in `tests/acceptance.test.mjs` run the same actual public flow from `examples/acceptance.mjs` with `long-finite-fixed`/`short-none-full` × `script`/`frames`. Scripted deltas and independently authored final checkpoints implement the same trusted local contract; neither replaces core transitions.
 
 | Requirement | Named executed test (file) | Integrated evidence / boundary |
 |---|---|---|

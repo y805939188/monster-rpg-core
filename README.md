@@ -1,11 +1,12 @@
 # monster-rpg-core
 
-Independent TypeScript ESM library for original monster RPG state and controlled battle integration. F0–F8 accepted; F9 **REVIEWING**, self-review PASS, final independent gate pending. This is not a production battle engine or complete Pokémon mechanics.
+Independent TypeScript ESM library for original monster RPG state and controlled battle integration. F0–F9 accepted; initial release commit `8ce567e09edf82d8df9a802d8b3b6b8532758d62`. P1 performance and P2 readability/module-build changes passed independent review. This is not a production battle engine or complete Pokémon mechanics.
 
-Pinned **Node 24.19.0 / npm 11.9.0**, TypeScript **7.0.2**, Vite **8.3.1**, @types/node **24.10.1**. No runtime dependencies. From the extracted source directory:
+Pinned **Node 24.19.0 / npm 11.9.0**, TypeScript **7.0.2**, Vite **8.3.1**, @types/node **24.10.1**, Prettier **3.9.9** (development only). No runtime dependencies. From the extracted source directory:
 
 ```sh
 npm ci --registry=https://registry.npmjs.org --cache=/tmp/monster-rpg-npm-cache
+npm run format:check
 npm run typecheck
 npm run build
 npm run build:types
@@ -52,4 +53,18 @@ Finite and no-resource moves, configurable capacities and growth tables are supp
 
 Battle deduplication retains the latest accepted receipt only in the current runtime lineage. Invalid engine-advanced confirmations fault without partial settlement. Abandonment releases locally and retains previous costs; it does not roll back an external engine. Captured/fled/aborted results receive no victory rewards. Trainer completion is once per durable state; new wild battles may reward again. Defeat recovery is explicit and fixes the pending party. Live/faulted/cleanup battles cannot be saved. Old-save rollback restores its old choices/history honestly; no cross-rollback/process exactly-once guarantee. Async/remote engines, combat saves, UI, authentic commercial formulas, breeding, equipment/economy and migrations are outside scope. Inputs are not a sandbox for hostile getters/proxies.
 
-[Acceptance](docs/acceptance.md) maps B01–B15 to executed tests. See [F9 evidence](docs/F9-evidence.md), [review history](docs/review-history.md), [dependencies/licenses](docs/dependencies.md), and [task card](docs/tasks/F9.md). Preparation Skills and gameplay baseline remain verbatim; their historical proposal status is superseded by recorded approval. No project distribution license has been selected; package remains private.
+[Acceptance](docs/acceptance.md) maps B01–B15 to executed tests. See [F9 evidence](docs/F9-evidence.md), [review history](docs/review-history.md), [dependencies/licenses](docs/dependencies.md), and [task card](docs/tasks/F9.md). Preparation Skills retain their original provenance; the gameplay baseline now records its accepted status. Historical preparation hashes describe the original documents, not subsequent status edits. No project distribution license has been selected; package remains private.
+
+Internal TypeScript imports are extensionless under Bundler resolution. Generated
+.d.ts module paths use .js so NodeNext consumers work too; Node-run .mjs scripts
+retain explicit .mjs imports. Vite builds JS, then build:types emits and corrects
+declarations. Use npm run format to format maintained code. See [build details](docs/build.md).
+
+Run `node scripts/benchmark-ownership.mjs` after building. It measures median heal
+and switch times for 100/500/1000 species and owned creatures, with a fixed party
+of two, three warmups and nine samples; fixture setup is excluded. P1 removes
+per-owner catalog copying while retaining input/output validation. Timing is
+machine-dependent, not a correctness threshold or proof of linear battle scaling;
+the remaining switch cost is unprofiled. [P1 evidence](docs/tasks/P1.md) records
+same-environment before/after results; [P2 evidence](docs/tasks/P2.md) records the
+formatting and package-consumer checks.
